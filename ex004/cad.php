@@ -17,7 +17,7 @@
         <?php 
         $n = $_GET["nome"];
         $s = $_GET["sobrenome"];
-        echo " <p> E um prazer te conhecer <strong> $n $s </strong> sua Gostosa do Caralho"
+        echo " <p> E um prazer te conhecer <strong> $n $s </strong> Este e o meu site"
         ?>
         <p><a href="javascript:history.go(-1)">Voltar para a pagina anterior</a></p>
     </main>
