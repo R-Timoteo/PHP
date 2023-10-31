@@ -21,7 +21,7 @@
         $url = file_get_contents('https://www.google.com/finance/quote/USD-BRL?sa=X&sqi=2&ved=2ahUKEwjaufPE9YCCAxXERLgEHQ7PBdEQmY0JegQICBAr');
         preg_match_all('/div class="YMlKec fxKbKc">(.*?)\/div/s', $url , $matches);
         $dol = (double)$matches [1][0];
-        $cambio = $dol/$real;
+        $cambio = $real/$dol;
         echo $real . "$ Corresponde a " . (number_format("$cambio", 2, ",",".")) ."$ em Dolar ";
          
         ?>
@@ -29,4 +29,4 @@
     </main>
 
 </body>
-</html>
+</html> 
